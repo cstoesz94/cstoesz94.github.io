@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+:root {
+    --trimColor: rgb(111, 218, 182);
+    --backgroundColor: #1d1d20;
+    --contentHeight: calc(100vh - 22px);
+    --textColor: #d1d1d1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    color: var(--textColor);
+}
+
+body {
+    background-color: var(--backgroundColor);
+}
+
+/* Outer-main container */
+
+#outer-main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+}
+
+/* Nav */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo {
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+
+/* Inner-main container */
+
+#inner-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    border: 1px solid var(--trimColor);
+}
+
+h1 span {
+    color: var(--trimColor);
+}
+
+#inner-main div span {
+    color: var(--trimColor);
+    font-weight: bold;
+}
+
+.link-btn:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    text-align: center;
+    background-color: var(--trimColor);
+}
