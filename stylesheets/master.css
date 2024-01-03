@@ -16,6 +16,7 @@
 
 body {
     background-color: var(--backgroundColor);
+    height: 100%;
 }
 
 /* Outer-main container */
@@ -25,16 +26,14 @@ body {
     flex-direction: column;
     padding: 20px;
     gap: 30px;
-    width: 60%;
     margin: auto;
 }
 
 /* Nav */
 
-nav {
+#main-nav {
     display: flex;
     justify-content: space-between;
-    width: 90%;
     margin: auto;
     padding-top: 10px;
 }
@@ -79,6 +78,7 @@ h1 span {
 }
 
 /* Upper Inner */
+
 #upper-inner {
     display: flex;
     flex-direction: column;
@@ -95,32 +95,63 @@ h1 span {
 }
 
 /* Lower Inner */
+
 #lower-inner {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-#skill-box-container {
-    display: flex;
-    flex-wrap: wrap;
+#lower-inner h1 {
+    text-align: center;
 }
 
-.skill-box {
-    background-color: var(--trimColor);
-    color: var(--backgroundColor);
-    font-weight: bold;
-    width: fit-content;
+/* Skills */
+
+#skill-category-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10%;
+}
+
+.skill-container {
+    width: 30%;
+}
+
+ul {
+    list-style: none;
     font-size: .9rem;
-    padding: 10px;
-    border: 1px solid black;
+    padding-top: 5px;
+    border: 1px solid var(--trimColor);
+}
+
+.nav-wrapper {
+    background-color: var(--trimColor);
+}
+
+.skill-title {
+    color: var(--backgroundColor);
+    font-size: 1.1rem;
 }
 
 /* Footer */
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+/* Screens equal to or greater than 770px */
+
+@media (min-width: 769px){ 
+    #outer-main {
+        width: 60%;
+    }
+
+    #main-nav {
+        width: 90%;
+    }
 }
